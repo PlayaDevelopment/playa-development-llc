@@ -49,7 +49,16 @@
     body { background: #f6f1e8; color: #1c1410; }
     .hero-overlay {
       background:
-        linear-gradient(180deg, rgba(28,20,16,0.55) 0%, rgba(28,20,16,0.28) 38%, rgba(28,20,16,0.18) 62%, rgba(28,20,16,0.72) 100%);
+        linear-gradient(180deg, rgba(28,20,16,0.50) 0%, rgba(28,20,16,0.22) 36%, rgba(28,20,16,0.38) 58%, rgba(28,20,16,0.84) 100%);
+    }
+    @media (max-width: 767px) {
+      .hero-overlay {
+        background:
+          linear-gradient(180deg, rgba(28,20,16,0.42) 0%, rgba(28,20,16,0.22) 40%, rgba(28,20,16,0.68) 68%, rgba(28,20,16,0.94) 100%);
+      }
+    }
+    .hero-copy {
+      text-shadow: 0 2px 24px rgba(28,20,16,0.65), 0 1px 3px rgba(28,20,16,0.55);
     }
     .nav-scrolled,
     .nav-open {
@@ -120,11 +129,11 @@
     />
     <div class="hero-overlay absolute inset-0"></div>
     <div class="relative z-10 flex h-full max-w-[1280px] mx-auto flex-col justify-end px-8 pb-20 lg:px-12 lg:pb-24">
-      <p class="mb-6 text-[11px] font-light tracking-[0.32em] uppercase text-cream/70">South Florida · Trim carpentry</p>
-      <h1 class="font-serif text-[2.75rem] leading-[1.08] font-normal text-cream sm:text-5xl lg:text-[4.25rem] lg:max-w-4xl">
+      <p class="hero-copy mb-6 text-[11px] font-light tracking-[0.32em] uppercase text-cream/90">South Florida · Trim carpentry</p>
+      <h1 class="hero-copy font-serif text-[2.75rem] leading-[1.08] font-normal text-cream sm:text-5xl lg:text-[4.25rem] lg:max-w-4xl">
         Luxury trim carpentry for South Florida homes.
       </h1>
-      <p class="mt-7 max-w-xl font-sans text-[15px] font-light leading-relaxed tracking-wide text-cream/80">
+      <p class="hero-copy mt-7 max-w-xl font-sans text-[15px] font-light leading-relaxed tracking-wide text-cream">
         Crown, casing, and millwork fitted to the architecture—quiet, exact, and made to last.
       </p>
       <div class="mt-10 flex flex-wrap items-center gap-4">
